@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Neural Speech Enhancement With Unsupervised Pre-training and Mixture Training</title>
+</head>
+<body>
+
+
+<h2 align="center"> Audio samples for "Neural Speech Enhancement With Unsupervised Pre-training and Mixture Training"</h2>
+<div><b>Authors:</b> Xiang Hao, Chenglin Xu, Lei Xie</div>
+<div><b>Abstract:</b> Supervised neural speech enhancement method always requires large-scale paired noisy and clean speech data. Since collecting adequate paired data from real-world applications is infeasible, simulated data is always adopted in supervised learning methods. However, the mismatch between the simulated data and in-the-wild data always causes the performance inconsistency when the system is deployed in real-world applications. Unsupervised speech enhancement methods are studied to address the mismatch problem by directly using the in-the-wild noisy data without access to the clean speech. Therefore, the simulated paired data is not necessary. However, the performance of the unsupervised speech enhancement method is not on a par with the supervised learning method. To address the aforementioned problems, this work proposes an unsupervised pre-training and mixture training algorithm by leveraging the advantages of supervised and unsupervised learning methods. Specifically, the proposed speech enhancement approach employs large volumes of unpaired noisy and clean speech to conduct unsupervised pre-training. The noisy data and a small amount of simulated paired data are then used for mixture training to fine-tune the pre-trained model. Experimental results show that the proposed method achieves better performance than other state-of-the-art supervised and unsupervised learning methods.</div>
+
+
+<h4>Comparing of different models(Clean, Noisy, DCCRN, DCCRN trained by proposed training scheme): </h4>
+
+<table border="1">
+  <tr>
+    <th>Clean</th>
+    <th>Noisy</th>
+	<th>DCCRN</th>
+	<th>DCCRN+proposed training scheme</th>
+  </tr>
+  <tr>
+    <td align="center">A</td>
+    <td align="center">B</td>
+	<td align="center">C</td>
+	<td align="center">D</td>
+  </tr>
+</table>
+
+<blockquote>
+<table>
+<tr><td colspan=2 ><span>1. test00.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8108_274318_000020_000001 (3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8108_274318_000020_000001(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8108_274318_000020_000001.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8108_274318_000020_000001(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test01.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8108_274318_000021_000000(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8108_274318_000021_000000(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8108_274318_000021_000000.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8108_274318_000021_000000(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test02.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8108_280354_000011_000005(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8108_280354_000011_000005(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8108_280354_000011_000005.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8108_280354_000011_000005(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test03.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8108_280354_000015_000002(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8108_280354_000015_000002(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8108_280354_000015_000002.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8108_280354_000015_000002(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test04.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8123_275209_000004_000011(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8123_275209_000004_000011(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8123_275209_000004_000011.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8123_275209_000004_000011(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test05.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8123_275216_000013_000005(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8123_275216_000013_000005(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8123_275216_000013_000005.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8123_275216_000013_000005(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test06.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8123_275216_000045_000000(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8123_275216_000045_000000(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8123_275216_000045_000000.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8123_275216_000045_000000(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test07.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8238_283452_000026_000010(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8238_283452_000026_000010(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8238_283452_000026_000010.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8238_283452_000026_000010(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test08.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8238_283452_000028_000002(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8238_283452_000028_000002(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8238_283452_000028_000002.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8238_283452_000028_000002(2).wav"></audio></td></tr>
+
+<tr><td colspan=2 ><span>1. test09.wav.</span></td> </tr>
+<tr><td><div style="float:left;width:20px; margin-top:16px;">A</div><audio controls><source src="clean/8238_283452_000033_000011(3).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">B</div><audio controls><source src="noisy/8238_283452_000033_000011(4).wav"></audio></td> <td><div style="float:left;width:20px; margin-top:16px;">C</div><audio controls>  <source src="dccrn/8238_283452_000033_000011.wav"></audio></td><td><div style="float:left;width:20px; margin-top:16px;">D</div><audio controls><source src="dccrn+proposed training scheme/8238_283452_000033_000011(2).wav"></audio></td></tr>
+
+
+</table>
+</blockquote>
+
+</body>
+</html>
